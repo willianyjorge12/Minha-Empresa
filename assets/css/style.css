@@ -1,0 +1,21 @@
+*{/* reset page */
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none; /* sem decoração no texto, sem o traço */
+    list-style: none;/* sem a decoração da linha ordenada, o ponttinho */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cabecalho{ /* edição da barra de pesquisa e logo */
+    display: flex;
+    justify-content: space-between;/* filho em uma ponta */
+    background-color: rgb(129, 168, 240);
+    padding: 30px 60px; 
+}
+.cabecalho ul{ /* selecionar junto com a linha */
+    display: flex; /* deixa os filhos um do lado do outro em linha */
+    gap: 20px; /* dar espaçamento dentro da linha não ordenada */
+}
+.cabecalho ul li a{ /* selecionar cabecalho com Âncora */
+    color: rgb(255, 255, 255);/* cor da letra */
+}
