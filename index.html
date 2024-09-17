@@ -13,34 +13,38 @@
     <title>minha empresa</title>
 </head>
 <body>
-    <div class="cabecalho">
+    <header class="cabecalho"> <!-- identificação da pagina com nomes, para cabecalho use a class header -->
         <img src="./assets/img/icons8-companhia-16.png" alt="Logo empresa">
-        <ul>
-            <li>
-                <a href="./index.html">Home</a></li>
-            <li>
-                <a href="./pages/historia.html">História</a></li>
-            <li>
-                <a href="./pages/contato.html">Contato</a></li>
-        </ul>
-    </div>
-    <div class="main">
-       <div class="pai-dos-lados"> <!-- Caixa grande -->
+        <nav> <!-- para identificar navegação digite a class nav -->
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a></li>
+                <li>
+                    <a href="./pages/historia.html">História</a></li>
+                <li>
+                    <a href="./pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main"> <!-- main class para identificação -->
+       <section class="pai-dos-lados"> <!-- Caixa grande -->
 
         <div class="lado-esquerdo"><!-- filho1 -->
             <h1 style="color: rgb(11, 14, 230);text-align: center;">Minha Empresa</h1>
         <!-- tag img para adicionar img -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet excepturi asperiores id numquam ex praesentium ad nemo temporibus voluptates officiis quidem, blanditiis laudantium necessitatibus nostrum, officia eos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, amet! Ea corrupti sunt ratione ducimus sed suscipit deleniti hic accusamus et consequatur. Ad aspernatur sunt deleniti culpa suscipit aperiam debitis?.</p>
         <!-- tag button para adicionar um botão -->
-        <button>conheça nossa história</button>
+         
+        <button class="btn">conheça nossa história</button> <!-- crie a class dentro de button para estilizar apenas o botão -->
+        
         </div>
 
         <div class="lado-direito"><!-- filho2 -->
             <img src="./assets/img/Empresa.png" alt="CLT no escritório">
         </div>
 
-       </div>
-       <div class="Newsletter">
+       </section> <!-- class section para identificar cada seção ou caixas de texto e img -->
+       <section class="Newsletter">
            <div class="filho">
                <h2>Inscreva-se na nossa Newsletter</h2>
                
@@ -54,14 +58,15 @@
                     <input type="text" placeholder="Digite seu nome completo" id="nome">
                     <label for="email">Email:</label>
                     <input type="email" placeholder="Digite seu email" id="email" required>
-                    <input type="submit" value="Inscreva-se">
+                    <input class="btn" type="submit" value="Inscreva-se"><!-- class para deixar apenas o botão inscreva-se igual o do conheça nossa historia -->
                 </fieldset>
-            
            </form>
-       </div>
-         <p>
-            Desenvolvido por <strong>Anny Jorge &copy; Todos os direitos reservados </strong>
-        </p>
+       </section>
+    </main>
+     <footer class="rodape"> <!-- footer class que é rodape em ingles para identificação -->
+     <p>
+        Desenvolvido por <strong>Anny Jorge &copy; Todos os direitos reservados </strong>
+    </p>
+     </footer> <!-- mova a class rodape para fora da class main para baixo -->
     </body>
-    </div>
 </html>

@@ -27,4 +27,24 @@
 .pai-dos-lados {/* caixa grande */
     display: flex;
 }
+.btn{
+    width: 200px;
+    border: 2px black solid;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color:rgb(66, 100, 165);
+    color: rgb(255, 255, 255);
+    box-shadow: blue 3px 3px 3px;
+    cursor: pointer; 
+    /* copie os codigos de home button e cole na class criada btn no style. */
+}
 
+.btn:hover{
+    background: blue; /* class .btn:hover PARA ADD EFEITO SEM ESPAÇOS NOS DOIS PONTOS*/
+}
+.rodape{
+   background: #333;
+   color: #fff;
+   text-align: center; /* centralizar texto do rodape*/
+   padding: 15px; 
+}
