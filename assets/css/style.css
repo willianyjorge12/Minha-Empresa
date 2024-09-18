@@ -20,6 +20,10 @@
 .cabecalho ul li a{ /* selecionar cabecalho com Âncora */
     color: rgb(255, 255, 255);/* cor da letra */
 }
+.cabecalho .menu{
+    display: none ; /* sumir menu hamburguer */
+}
+
 .main{
     padding: 30px 60px;
 }
@@ -28,7 +32,7 @@
     display: flex;
 }
 .btn{
-    width: 200px;
+    width: 250px;
     border: 2px black solid;
     border-radius: 4px;
     padding: 10px 20px;
@@ -37,6 +41,7 @@
     box-shadow: blue 3px 3px 3px;
     cursor: pointer; 
     /* copie os codigos de home button e cole na class criada btn no style. */
+    text-align: center;
 }
 
 .btn:hover{
@@ -48,3 +53,14 @@
    text-align: center; /* centralizar texto do rodape*/
    padding: 15px; 
 }
+
+@media screen and (max-width: 500px){
+    .cabecalho nav{
+        display: none;
+     }
+     .cabecalho .menu{
+       display: flex;
+     }
+}
+
+

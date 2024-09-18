@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="./assets/icons8-companhia-16.png" type="image/x-icon">
     <!-- nome do desenvolvedor  -->
     <meta name="author" content="Anny Jorge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- shift + alt + a para adicionar comentario -->
     <!-- tag nick para adicionar icon na barra do navegador -->
      <link rel="stylesheet" href="./assets/css/style.css">
@@ -25,6 +29,9 @@
                     <a href="./pages/contato.html">Contato</a></li>
             </ul>
         </nav>
+       <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+       </div>
     </header>
     <main class="main"> <!-- main class para identificação -->
        <section class="pai-dos-lados"> <!-- Caixa grande -->
@@ -34,8 +41,8 @@
         <!-- tag img para adicionar img -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet excepturi asperiores id numquam ex praesentium ad nemo temporibus voluptates officiis quidem, blanditiis laudantium necessitatibus nostrum, officia eos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, amet! Ea corrupti sunt ratione ducimus sed suscipit deleniti hic accusamus et consequatur. Ad aspernatur sunt deleniti culpa suscipit aperiam debitis?.</p>
         <!-- tag button para adicionar um botão -->
-         
-        <button class="btn">conheça nossa história</button> <!-- crie a class dentro de button para estilizar apenas o botão -->
+          <!-- crie a class dentro de button para estilizar apenas o botão -->
+        <a class="btn" href="./pages/historia.html">Conheça nossa historia</a>
         
         </div>
 
@@ -53,13 +60,12 @@
            <form>
            
 
-               <fieldset>
-                    <label for="nome">Nome:</label>
+                <label for="nome">Nome:</label>
                     <input type="text" placeholder="Digite seu nome completo" id="nome">
                     <label for="email">Email:</label>
                     <input type="email" placeholder="Digite seu email" id="email" required>
                     <input class="btn" type="submit" value="Inscreva-se"><!-- class para deixar apenas o botão inscreva-se igual o do conheça nossa historia -->
-                </fieldset>
+              
            </form>
        </section>
     </main>
