@@ -1,0 +1,28 @@
+.main .historia{
+    display: flex;
+}
+.main h1, h2, h3{
+    text-align: center;
+    padding: 20px;
+}
+.historia div{
+    width: 50%;
+}
+.historia .lado-esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.historia .lado-direito img{
+    width: 100%;
+}
+@media screen and (max-width: 650px){
+    .historia{
+        flex-direction: column-reverse;
+    }
+    .historia div{
+        width: 100%;
+    }
+}
+    
+

@@ -62,5 +62,11 @@
        display: flex;
      }
 }
-
-
+.cabecalho ul li a:hover{
+    color: aqua;
+}
+@media screen and (max-width: 650px){
+   .main{
+       padding: 10px;
+   }
+}
